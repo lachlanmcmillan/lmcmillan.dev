@@ -9,16 +9,16 @@
 
 		
 
-		<link rel="modulepreload" href="/_app/start-bf5cff2a.js">
-		<link rel="modulepreload" href="/_app/chunks/vendor-1d2469b0.js">
-		<link rel="modulepreload" href="/_app/pages/__layout.svelte-8f9896e7.js">
-		<link rel="modulepreload" href="/_app/pages/index.svelte-6028f97e.js">
+		<link rel="modulepreload" href="/_app/start-7b21d0e5.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-6ea882ee.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-d11a51dc.js">
+		<link rel="modulepreload" href="/_app/pages/index.svelte-e426a7c5.js">
 		<link rel="stylesheet" href="/_app/assets/start-61d1577b.css">
 		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-c3f5a873.css">
-		<link rel="stylesheet" href="/_app/assets/pages/index.svelte-4122c208.css">
+		<link rel="stylesheet" href="/_app/assets/pages/index.svelte-9b314a3d.css">
 
 		<script type="module">
-			import { start } from "/_app/start-bf5cff2a.js";
+			import { start } from "/_app/start-7b21d0e5.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"","assets":""},
@@ -31,8 +31,8 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/_app/pages/__layout.svelte-8f9896e7.js"),
-						import("/_app/pages/index.svelte-6028f97e.js")
+						import("/_app/pages/__layout.svelte-d11a51dc.js"),
+						import("/_app/pages/index.svelte-e426a7c5.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -61,12 +61,24 @@
 
 <section class="svelte-7v9or9"><h1 class="svelte-7v9or9">lmcmillan.dev</h1>
 	<p><b>Welcome</b> to my site</p>
-	<div class="counter svelte-139m1ow"><button aria-label="Decrease the counter by one" class="svelte-139m1ow"><svg aria-hidden="true" viewBox="0 0 1 1" class="svelte-139m1ow"><path d="M0,0.5 L1,0.5" class="svelte-139m1ow"></path></svg></button>
-
-	<div class="counter-viewport svelte-139m1ow"><div class="counter-digits svelte-139m1ow" style="transform: translate(0, 0%)"><strong style="top: -100%" aria-hidden="true" class="svelte-139m1ow">1</strong>
-			<strong class="svelte-139m1ow">0</strong></div></div>
-
-	<button aria-label="Increase the counter by one" class="svelte-139m1ow"><svg aria-hidden="true" viewBox="0 0 1 1" class="svelte-139m1ow"><path d="M0,0.5 L1,0.5 M0.5,0 L0.5,1" class="svelte-139m1ow"></path></svg></button>
+	<div class="calculator svelte-1xvvmhe">CALCULATOR
+	<div class="output">25</div>
+	<div class="row"><button class="digit">7</button>
+		<button class="digit">8</button>
+		<button class="digit">9</button>
+		<button class="digit">-</button></div>
+	<div class="row"><button class="digit">4</button>
+		<button class="digit">5</button>
+		<button class="digit">6</button>
+		<button class="digit">+</button></div>
+	<div class="row"><button class="digit">1</button>
+		<button class="digit">2</button>
+		<button class="digit">3</button>
+		<button class="digit">x</button></div>
+	<div class="row"><button class="digit"></button>
+		<button class="digit">0</button>
+		<button class="digit"></button>
+		<button class="digit">=</button></div>
 </div>
 </section></main>
 
