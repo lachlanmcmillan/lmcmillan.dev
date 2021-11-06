@@ -12,7 +12,7 @@
 
 <section>
 	<h1>lmcmillan.dev</h1>
-
+	<p><b>Welcome</b> to my site</p>
 	<Counter />
 </section>
 
