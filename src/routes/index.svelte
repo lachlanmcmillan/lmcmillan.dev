@@ -27,6 +27,7 @@
 
 	h1 {
 		width: 100%;
+		color: burlywood;
 	}
 
 	.welcome {
