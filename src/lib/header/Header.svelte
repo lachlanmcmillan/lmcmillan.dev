@@ -19,9 +19,7 @@
 		</svg>
 	</nav>
 
-	<div class="corner">
-		<a href="https://github.com/lachlanmcmillan">github.com/lachlanmcmillan</a>
-	</div>
+
 </header>
 
 <style>

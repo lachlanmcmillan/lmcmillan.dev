@@ -9,6 +9,12 @@
 	<slot />
 </main>
 
+<footer>
+	<div class="corner">
+		<a href="https://github.com/lachlanmcmillan">github.com/lachlanmcmillan</a>
+	</div>
+</footer>
+
 <style>
 	main {
 		flex: 1;
