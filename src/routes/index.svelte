@@ -7,7 +7,7 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>lmcmillan.dev</title>
 </svelte:head>
 
 <section>
