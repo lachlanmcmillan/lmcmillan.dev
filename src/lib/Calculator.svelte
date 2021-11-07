@@ -2,6 +2,8 @@
 	// import { spring } from 'svelte/motion';
 
 	let register = [];
+	let total = 0;
+	let operator;
 	let output = "START";
 
 	const getRegisterOutput = (r) => {
@@ -17,9 +19,19 @@
 	}
 
 	const handleBtnPress = (val) => {
-		console.log(`handleBtnPress(${val})`)
 		if (val == "clear") {
 			register = [];
+		} else if (val == "+") {
+			total = listToNumber(register);
+			operator = "+";
+			register = [];
+		} else if (val = "=") {
+			if (operator == "+") {
+				total = total + listToNumber(register); 
+				output = total;
+				register = [];
+				return;
+			}
 		} else {
 			register.push(val)
 		}
@@ -39,7 +51,7 @@
 		<button class="digit" on:click={() => handleBtnPress(4)}>4</button>
 		<button class="digit" on:click={() => handleBtnPress(5)}>5</button>
 		<button class="digit" on:click={() => handleBtnPress(6)}>6</button>
-		<button class="digit" on:click={() => null}>+</button>
+		<button class="digit" on:click={() => handleBtnPress("+")}>+</button>
 	</div>
 	<div class="row">
 		<button class="digit" on:click={() => handleBtnPress(1)}>1</button>
