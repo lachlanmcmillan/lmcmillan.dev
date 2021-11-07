@@ -6,6 +6,7 @@
 	$: output = getRegisterOutput(register)
 
 	const getRegisterOutput = (r) => {
+		console.log({ r })
 		if (r.length == 0) {
 			return "0";
 		}
