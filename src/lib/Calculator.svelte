@@ -8,14 +8,10 @@
 
 	$: console.log({ register, total, operator, output})
 
-	const getRegisterOutput = (r) => {
-		if (r.length == 0) {
+	const listToNumber = (list) => {
+		if (list.length == 0) {
 			return "0";
 		}
-		return listToNumber(r);
-	}
-
-	const listToNumber = (list) => {
 		return parseFloat(list.join(''));
 	}
 
@@ -33,13 +29,14 @@
 			if (operator == "+") {
 				total = total + listToNumber(register);
 				output = total;
+				operator = null;
 				register = [];
 				return;
 			}
 		} else {
 			register.push(val)
 		}
-		output = getRegisterOutput(register);
+		output = listToNumber(register);
 	}
 </script>
 
