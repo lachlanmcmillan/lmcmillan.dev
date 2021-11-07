@@ -1,7 +1,6 @@
 <script lang="ts">
 	// import { spring } from 'svelte/motion';
 
-	let output = "";
 	let register = [];
 
 	$: output = getRegisterOutput(register)
