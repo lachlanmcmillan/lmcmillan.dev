@@ -6,6 +6,8 @@
 	let operator;
 	let output = "START";
 
+	$: console.log({ register, total, operator, output})
+
 	const getRegisterOutput = (r) => {
 		console.log({ r })
 		if (r.length == 0) {
