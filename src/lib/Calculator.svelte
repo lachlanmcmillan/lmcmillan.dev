@@ -21,13 +21,15 @@
 	const handleBtnPress = (val) => {
 		if (val == "clear") {
 			register = [];
+			total = 0;
 		} else if (val == "+") {
-			total = listToNumber(register);
+			total = total + listToNumber(register);
+			output = total;
 			operator = "+";
 			register = [];
 		} else if (val == "=") {
 			if (operator == "+") {
-				total = total + listToNumber(register); 
+				total = total + listToNumber(register);
 				output = total;
 				register = [];
 				return;
