@@ -4,7 +4,7 @@
 	let output = "";
 	let register = [];
 
-	$: output = getRegisterOutput(r)
+	$: output = getRegisterOutput(register)
 
 	const getRegisterOutput = (r) => {
 		if (r.length == 0) {
