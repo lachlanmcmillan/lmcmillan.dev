@@ -25,7 +25,7 @@
 			total = listToNumber(register);
 			operator = "+";
 			register = [];
-		} else if (val = "=") {
+		} else if (val == "=") {
 			if (operator == "+") {
 				total = total + listToNumber(register); 
 				output = total;
