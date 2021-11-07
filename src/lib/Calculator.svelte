@@ -2,8 +2,7 @@
 	// import { spring } from 'svelte/motion';
 
 	let register = [];
-
-	$: output = getRegisterOutput(register)
+	let output = getRegisterOutput(register)
 
 	const getRegisterOutput = (r) => {
 		console.log({ r })
@@ -20,6 +19,7 @@
 	const handleBtnPress = (val) => {
 		console.log(`handleBtnPress(${val})`)
 		register.shift(val)
+		output = getRegisterOutput(register);
 	}
 </script>
 
