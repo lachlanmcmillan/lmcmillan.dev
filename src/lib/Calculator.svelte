@@ -1,7 +1,7 @@
 <script lang="ts">
 	// import { spring } from 'svelte/motion';
 
-	// let count = 0;
+	let output = 0;
 
 	// const displayed_count = spring();
 	// $: displayed_count.set(count);
@@ -14,9 +14,9 @@
 </script>
 
 <div class="calculator">
-	<div class="output">25</div>
+	<div class="output">{output}</div>
 	<div class="row">
-		<button class="digit">7</button>
+		<button class="digit" on:click={() => output = 7}>7</button>
 		<button class="digit">8</button>
 		<button class="digit">9</button>
 		<button class="digit">-</button>
