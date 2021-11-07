@@ -18,6 +18,7 @@
 	}
 
 	const handleBtnPress = (val) => {
+		console.log(`handleBtnPress(${val})`)
 		register.shift(val)
 	}
 </script>
