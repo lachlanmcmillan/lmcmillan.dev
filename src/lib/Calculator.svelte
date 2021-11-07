@@ -2,7 +2,7 @@
 	// import { spring } from 'svelte/motion';
 
 	let register = [];
-	let output = getRegisterOutput(register)
+	let output = "START";
 
 	const getRegisterOutput = (r) => {
 		console.log({ r })
