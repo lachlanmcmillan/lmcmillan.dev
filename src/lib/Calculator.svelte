@@ -49,6 +49,10 @@
     	font-family: monospace;
 		background: rgb(225,111,96);
     }
+	.output {
+		text-align: right;
+		padding-right: 6px;
+	}
 	.row {
 		display: flex;
 	}
