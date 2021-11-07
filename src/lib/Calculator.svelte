@@ -14,7 +14,6 @@
 </script>
 
 <div class="calculator">
-    CALCULATOR
 	<div class="output">25</div>
 	<div class="row">
 		<button class="digit">7</button>
@@ -45,5 +44,15 @@
 <style>
 	.calculator {
         border: 1px solid black;
+		width: 400px;
+    	font-size: 48px;
+    	font-family: monospace;
+		background: rgb(225,111,96);
     }
+	.row {
+		display: flex;
+	}
+	.digit {
+		flex: 1;
+	}
 </style>
