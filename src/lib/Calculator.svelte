@@ -29,6 +29,7 @@
 			output = total;
 			operator = "+";
 			register = [];
+			return;
 		} else if (val == "=") {
 			if (operator == "+") {
 				total = total + listToNumber(register);
