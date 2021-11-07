@@ -17,27 +17,27 @@
 	<div class="output">{output}</div>
 	<div class="row">
 		<button class="digit" on:click={() => output = 7}>7</button>
-		<button class="digit">8</button>
-		<button class="digit">9</button>
-		<button class="digit">-</button>
+		<button class="digit" on:click={() => output = 8}>8</button>
+		<button class="digit" on:click={() => output = 9}</button>}>9</button>
+		<button class="digit" on:click={() => null}</button>}>-</button>
 	</div>
 	<div class="row">
-		<button class="digit">4</button>
-		<button class="digit">5</button>
-		<button class="digit">6</button>
-		<button class="digit">+</button>
+		<button class="digit" on:click={() => output = 4}</button>}>4</button>
+		<button class="digit" on:click={() => output = 5}</button>}>5</button>
+		<button class="digit" on:click={() => output = 6}</button>}>6</button>
+		<button class="digit" on:click={() => null}</button>}>+</button>
 	</div>
 	<div class="row">
-		<button class="digit">1</button>
-		<button class="digit">2</button>
-		<button class="digit">3</button>
-		<button class="digit">x</button>
+		<button class="digit" on:click={() => output = 1}</button>}>1</button>
+		<button class="digit" on:click={() => output = 2}</button>}>2</button>
+		<button class="digit" on:click={() => output = 3}</button>}>3</button>
+		<button class="digit" on:click={() => null}</button>}>x</button>
 	</div>
 	<div class="row">
-		<button class="digit"></button>
-		<button class="digit">0</button>
-		<button class="digit"></button>
-		<button class="digit">=</button>
+		<button class="digit" on:click={() => null}</button>}></button>
+		<button class="digit" on:click={() => output = 0}</button>}>0</button>
+		<button class="digit" on:click={() => null}</button>}></button>
+		<button class="digit" on:click={() => null}</button>}>=</button>
 	</div>
 </div>
 
