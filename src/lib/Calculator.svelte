@@ -67,7 +67,7 @@
 		<button class="digit" on:click={() => handleBtnPress("clear")}>CLS</button>
 		<button class="digit" on:click={() => handleBtnPress(0)}>0</button>
 		<button class="digit" on:click={() => null}></button>
-		<button class="digit" on:click={() => null}>=</button>
+		<button class="digit" on:click={() => handleBtnPress("=")}>=</button>
 	</div>
 </div>
 
