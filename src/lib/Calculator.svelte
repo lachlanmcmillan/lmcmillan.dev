@@ -10,7 +10,7 @@
 
 	const listToNumber = (list) => {
 		if (list.length == 0) {
-			return "0";
+			return 0;
 		}
 		return parseFloat(list.join(''));
 	}
