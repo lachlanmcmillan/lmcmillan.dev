@@ -18,7 +18,7 @@
 
 	const handleBtnPress = (val) => {
 		console.log(`handleBtnPress(${val})`)
-		register.shift(val)
+		register.unshift(val)
 		output = getRegisterOutput(register);
 	}
 </script>
