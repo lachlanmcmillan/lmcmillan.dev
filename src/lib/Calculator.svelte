@@ -20,9 +20,9 @@
 		console.log(`handleBtnPress(${val})`)
 		if (val == "clear") {
 			register = [];
-			return;
+		} else {
+			register.push(val)
 		}
-		register.push(val)
 		output = getRegisterOutput(register);
 	}
 </script>
