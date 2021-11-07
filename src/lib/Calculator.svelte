@@ -9,7 +9,6 @@
 	$: console.log({ register, total, operator, output})
 
 	const getRegisterOutput = (r) => {
-		console.log({ r })
 		if (r.length == 0) {
 			return "0";
 		}
