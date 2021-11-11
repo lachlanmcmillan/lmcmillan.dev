@@ -3,7 +3,7 @@
 /**
  * pre-build.mjs
  * 
- * this script is designed to be run from Github Actions
+ * this script is designed to be run from Github Actions in the root directory
  **/
 
 const buildDetails = {
@@ -12,5 +12,5 @@ const buildDetails = {
 	"build_user": process.env.GITHUB_ACTOR || "unknown",
 	"build_timestamp": Date.now()
 }
-const buildDetailsFilePath = './build/build-details.json';
+const buildDetailsFilePath = './src/build-details.json';
 await fs.writeFile(buildDetailsFilePath, JSON.stringify(buildDetails, null, 2));
