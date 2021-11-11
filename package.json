@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
-    "post-build": "cp ./CNAME ./build/CNAME",
+    "pre-build": "zx ./scripts/pre-build.mjs",
+    "post-build": "zx ./scripts/post-build.mjs",
     "preview": "svelte-kit preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch"
@@ -23,6 +24,7 @@
   "dependencies": {
     "@fontsource/fira-mono": "^4.5.0",
     "@lukeed/uuid": "^2.0.0",
-    "cookie": "^0.4.1"
+    "cookie": "^0.4.1",
+    "zx": "^4.2.0"
   }
 }

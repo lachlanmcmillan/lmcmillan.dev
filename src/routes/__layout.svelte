@@ -1,6 +1,9 @@
 <script lang="ts">
 	import Header from '$lib/header/Header.svelte';
+	import printBuildDetails from '$lib/printBuildDetails';
 	import '../app.css';
+
+	printBuildDetails();
 </script>
 
 <Header />

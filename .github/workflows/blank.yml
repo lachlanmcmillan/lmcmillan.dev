@@ -39,6 +39,7 @@ jobs:
             ${{ runner.os }}-node-
 
       - run: npm ci
+      - run: npm run pre-build
       - run: npm run build
       - run: npm run post-build
 
