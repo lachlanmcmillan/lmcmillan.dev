@@ -1,13 +1,16 @@
 <script lang="ts">
-	import Header from '$lib/header/Header.svelte';
-	import printBuildDetails from '$lib/printBuildDetails';
+	import Header from '../components/header/Header.svelte';
+	import printBuildDetails from '../lib/printBuildDetails';
 	import '../app.css';
 
 	printBuildDetails();
 </script>
 
-<Header />
+<svelte:head>
+	<title>lmcmillan.dev</title>
+</svelte:head>
 
+<!-- <Header /> -->
 <main>
 	<slot />
 </main>

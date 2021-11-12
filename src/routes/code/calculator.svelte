@@ -3,16 +3,13 @@
 </script>
 
 <script lang="ts">
+	import Calculator from '../../components/Calculator.svelte';
+	import ReturnButton from '../../components/ReturnButton.svelte';
 </script>
 
-<svelte:head>
-	<title>lmcmillan.dev</title>
-</svelte:head>
-
 <section>
-	<h1>lmcmillan.dev</h1>
-	<p><b>Welcome</b> to my site</p>
-	<a sveltekit:prefetch href="/code/calculator">Calculator</a>
+	<ReturnButton href="/" />
+	<Calculator />
 </section>
 
 <style>
@@ -22,10 +19,5 @@
 		justify-content: center;
 		align-items: center;
 		flex: 1;
-	}
-
-	h1 {
-		width: 100%;
-		color: burlywood;
 	}
 </style>
