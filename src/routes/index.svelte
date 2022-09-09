@@ -11,8 +11,10 @@
 
 <section>
 	<h1>lmcmillan.dev</h1>
-	<p><b>Welcome</b> to my site</p>
-	<a sveltekit:prefetch href="/code/calculator">Calculator</a>
+	<p><strong>Welcome</strong> to my site</p>
+	<a sveltekit:prefetch href="/code/calculator">calculator</a>
+	<p><strong>animations</strong></p>
+	<a sveltekit:prefetch href="/animations/text-underline">text underline</a>
 </section>
 
 <style>
