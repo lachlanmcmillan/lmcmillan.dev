@@ -5,13 +5,13 @@ The personal site of Lachlan McMillan
 ## Install
 
 ```bash
-yarn install
+npm install
 ```
 
 ## Develop
 
 ```bash
-yarn dev
+npm run dev
 ```
 
 ## Building
